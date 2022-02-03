@@ -1,0 +1,19 @@
+input {
+  background-color: rgb(136, 243, 145);
+  color: rgb(7, 121, 19);
+  font-size: 30px;
+  width: 180px;
+}
+
+.mywid {
+  width: 100px;
+}
+
+.myTotWid {
+  width: 200px;
+}
+
+.myFont {
+  color: rgb(7, 121, 19);
+  font-size: 30px;
+}
