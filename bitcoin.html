@@ -23,7 +23,7 @@
         <i id="Bitcoin" class="bi bi-currency-bitcoin myFont"></i>
         <i id="Dollar" class="bi bi-currency-dollar myFont" style="display: none"></i>
 
-        <input type="number" id="mywid myFont" />
+        <input id="amount" type="number" id="mywid myFont">
     </div>
 
     <div class="m-1">
@@ -32,7 +32,7 @@
 
             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
             
-            <a href="#" onclick="display('Bitcoin', 'Dollar');">
+            <a id="bitcoinButton" href="#" onclick="display('Bitcoin', 'Dollar');">
                 <label class="btn btn-outline-primary mywid" for="btnradio1">
                     <i class="bi bi-currency-dollar"></i>
                 </label>
@@ -41,7 +41,7 @@
 
             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
             
-            <a href="#" onclick="display('Dollar', 'Bitcoin');">
+            <a id="dollarButton" href="#" onclick="display('Dollar', 'Bitcoin');">
                 <label class="btn btn-outline-primary mywid" for="btnradio2">
                     <i class="bi bi-currency-bitcoin"></i>
                 </label>
@@ -51,7 +51,7 @@
     </div>
 
     <div class="m-1">
-        <a data-role="button" class="btn btn-success myTotWid">CONVERT</a>
+        <a data-role="button" class="btn btn-success myTotWid" onclick="convert(document.getElementById('amount').value);">CONVERT</a>
     </div>
 </body>
 </html>
