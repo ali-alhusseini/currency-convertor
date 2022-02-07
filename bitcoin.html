@@ -30,28 +30,30 @@
         <h3>Convert to what?</h3>
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            
-            <a id="bitcoinButton" href="#" onclick="display('Bitcoin', 'Dollar');">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                 <label class="btn btn-outline-primary mywid" for="btnradio1">
-                    <i class="bi bi-currency-dollar"></i>
+                    <i id="bitcoinButton" class="bi bi-currency-dollar">
+                        <a href="#" onclick="display('Bitcoin', 'Dollar');"></a>
+                    </i>
                 </label>
-            </a>
-            
-
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            
-            <a id="dollarButton" href="#" onclick="display('Dollar', 'Bitcoin');">
+                
+                
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
                 <label class="btn btn-outline-primary mywid" for="btnradio2">
-                    <i class="bi bi-currency-bitcoin"></i>
+                    <i id="bitcoinButton" class="bi bi-currency-bitcoin">
+                        <a href="#" onclick="display('Dollar', 'Bitcoin')"></a>
+                    </i>
                 </label>
-            </a>
+            </div>
             
         </div>
     </div>
 
     <div class="m-1">
         <a data-role="button" class="btn btn-success myTotWid" onclick="convert(document.getElementById('amount').value);">CONVERT</a>
+        <div class="myFont"><i class="bi bi-currency-bitcoin"></i></div>
     </div>
 </body>
 </html>

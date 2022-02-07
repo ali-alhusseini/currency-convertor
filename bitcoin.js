@@ -17,14 +17,20 @@ function convert(value) {
         alert("The amount must be positive.");
         location.reload();
     } else if (document.getElementById('bitcoinButton').clicked == true){
-        convertToBitcoin(document.getElementById('amount').value);
+        convertToBitcoin(value);
+    } else {
+        convertToDollar(value);
     }
 }
 
 function convertToDollar(bitcoinValue) {
+    let result = bitcoinValue * BITCOIN_FACTOR;
+    localStorage.setItem("result", result);
 
 }
 
 function convertToBitcoin(dollarValue) {
-   console.log(dollarValue * BITCOIN_FACTOR);
+    let result = dollarValue * BITCOIN_FACTOR;
+    localStorage.setItem("result", result);
+    document.write("converted to bitcoin");
 }
