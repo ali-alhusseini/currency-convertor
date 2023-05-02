@@ -1,9 +1,3 @@
-/*
-// Author: Ali Alhusseini (A00431699)
-//
-// This file calculates the conversions between Canadian Dollars and Bitcoins.
-*/
-
 const BITCOIN_FACTOR = 46515.16;
 
 /*
