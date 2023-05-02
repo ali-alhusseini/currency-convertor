@@ -1,4 +1,4 @@
 # Currency-Convertor
 
-
-This file converts values between Canadian Dollars and Bitcoins
+## Overview
+This site converts values between Canadian Dollars and Bitcoins
